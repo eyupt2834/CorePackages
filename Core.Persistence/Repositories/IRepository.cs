@@ -49,7 +49,7 @@ namespace Core.Persistence.Repositories
 
         ICollection<TEntity> AddRange(ICollection<TEntity> entity);
 
-        TEntity Update();
+        TEntity Update(TEntity entity);
 
         ICollection<TEntity> UpdateRange(ICollection<TEntity> entity);
 

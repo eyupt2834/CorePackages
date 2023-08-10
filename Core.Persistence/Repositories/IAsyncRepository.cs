@@ -48,7 +48,7 @@ namespace Core.Persistence.Repositories
 
         Task<ICollection<TEntity>> AddRangeAsync(ICollection<TEntity> entities);
 
-        Task<TEntity> UpdateAsync();
+        Task<TEntity> UpdateAsync(TEntity entity);
 
         Task<ICollection<TEntity>> UpdateRangeAsync(ICollection<TEntity> entities);
 
