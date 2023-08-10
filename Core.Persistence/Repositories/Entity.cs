@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Core.Persistence.Repositories
 {
-    public class Entity<TId>
+    public class Entity<TId> :IEntityTimeStamps
     {
         public TId Id { get; set; }
 
         public DateTime CreatedDate { get; set; }
 
-        public DateTime? UpdateDate { get; set; }
+        public DateTime? UpdatedDate { get; set; }
 
         public DateTime? DeletedDate { get; set; }
 
