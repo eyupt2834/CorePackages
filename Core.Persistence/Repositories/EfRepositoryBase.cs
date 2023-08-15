@@ -58,7 +58,7 @@ namespace Core.Persistence.Repositories
             return await queryable.AnyAsync(cancellation);
         }
 
-        public async Task<TEntity> DeleteAsync(TEntity entity, bool permanent)
+        public async Task<TEntity> DeleteAsync(TEntity entity, bool permanent=false)
         {
             await SetEntityAsDeletedAsync(entity, permanent);
             await Context.SaveChangesAsync();
