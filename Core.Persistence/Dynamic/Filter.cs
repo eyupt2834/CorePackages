@@ -16,7 +16,7 @@ namespace Core.Persistence.Dynamic
 
         public string? Logic { get; set; }
 
-        public IEnumerable<Filter> Filters { get; set; }
+        public IEnumerable<Filter>? Filters { get; set; }
 
         public Filter()
         {
