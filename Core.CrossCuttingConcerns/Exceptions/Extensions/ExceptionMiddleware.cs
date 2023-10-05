@@ -37,7 +37,7 @@ namespace Core.CrossCuttingConcerns.Exceptions.Extensions
         {
             response.ContentType = "application/json";
             _httpExceptionHandler.Response = response;
-            return _httpExceptionHandler.HandleExeptionAsync(exception);
+            return  _httpExceptionHandler.HandleExceptionAsync(exception);
         }
 
 
