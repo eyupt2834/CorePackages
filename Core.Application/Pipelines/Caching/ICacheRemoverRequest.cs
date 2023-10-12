@@ -1,14 +1,11 @@
 ﻿namespace Core.Application.Pipelines.Caching
 {
-    public interface ICachableRequest
+    public interface ICacheRemoverRequest
     {
         public string CacheKey { get; }
 
         public bool BypassCache { get; }
 
         string? CacheGroupKey { get; }
-
-        TimeSpan? SlidingExpiration { get; }
-
     }
 }
